@@ -3,7 +3,7 @@ from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy import ForeignKey
 
-
+#Esoy poniendo un comentario
 app = Flask(__name__)
 
 #mysql+pymysql://usuario:contraseña@ip/nombre_db
