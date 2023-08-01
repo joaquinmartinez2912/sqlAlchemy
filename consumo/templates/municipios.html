@@ -1,0 +1,18 @@
+{% extends "provincias.html" %}
+
+<!-------------------------------------------->
+
+{% block tittle %} Municipios {% endblock %} 
+
+{% block body %} 
+
+  <h2 class="display-6">Las municipios son:</h2>
+      
+
+  {% for mun in munis %}
+      <a  class="btn btn-info p-2 m-1">{{mun.localidad_censal.nombre}}</a>
+  {% endfor %}
+
+{% endblock %} 
+
+<!-------------------------------------------->

@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+<!-------------------------------------------->
+
+{% block tittle %} Provincias {% endblock %} 
+
+
+{% block body %} 
+
+  <h2 class="display-6">Las provincias argentinas son {{cant_prov}}</h2>
+      
+
+  {% for prov in provs %}
+      <a href="/provincias/{{prov.id}}/municipios" class="btn btn-info p-2 m-1"> {{prov.id}} - {{prov.nombre}}</a>
+  {% endfor %}
+
+{% endblock %} 
+
+<!-------------------------------------------->
